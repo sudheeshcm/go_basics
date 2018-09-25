@@ -7,7 +7,7 @@ import (
 )
 
 func main() {
-	fmt.Println("Hello , 世界")
+	fmt.Println("Hello , 世界") // print Hello World
 
 	// variable declaration
 	var a int
