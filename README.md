@@ -14,10 +14,11 @@
 1.  Run the command: `go build main.go`
 2.  execute the build: `./main`
 
-
 #### Topics covered
+
 1. Print "Hello world"
 2. Module imports
 3. Multi functions
 4. Basic type declarations and initialization
 5. String operations
+6. structs, maps and pointers
