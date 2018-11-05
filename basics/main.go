@@ -6,6 +6,17 @@ import (
 	"strconv" // string operations and convertions
 )
 
+// Person Struct declaration
+type Person struct {
+	name string
+	age  int
+}
+
+// Hello method for the Struct Person
+func (p Person) Hello() {
+	fmt.Println(p.name, "says Hello..!!")
+}
+
 func main() {
 	fmt.Println("Hello , 世界") // print Hello World
 
@@ -56,15 +67,12 @@ func main() {
 	fmt.Println("Error: ", error)
 
 	//
-	// Struct declaration
+	// Structs usage
 	fmt.Println("\n**** Struct Declarations ****")
-	type person struct {
-		name string
-		age  int
-	}
-	p1 := person{name: "John", age: 23}
+	p1 := Person{name: "John", age: 23}
 	fmt.Println("Struct Person: ", p1)
 	fmt.Println("Age of p1: ", p1.age)
+	p1.Hello()
 
 	//
 	// Pointers
